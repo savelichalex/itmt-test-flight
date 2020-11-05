@@ -1,0 +1,31 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{multicol}
+
+\begin{document}
+
+If the sequence $\{a_{n}\}_{n=1}^{\infty}$ tends to limit $L$ as $n\rightarrow \infty$, then for any fixed number $M>0$, the sequence $\{Ma_{n}\}_{n=1}^{\infty}$ tends to the limit $ML$.
+\begin{equation*}
+(\forall \epsilon > 0)(\exists n \in \mathbb{N})(\forall m \geq n)[|a_{m}-L|<\epsilon] \tag*{(1)}
+\end{equation*}
+\begin{equation*}
+(\forall \epsilon > 0)(\exists n \in \mathbb{N})(\forall m \geq n)[|Ma_{m}-ML|<\epsilon] \tag*{(2)}
+\end{equation*}
+Proof: By contradiction.
+\newline
+Suppose:
+\begin{align*}
+(\forall m \geq n)[|Ma_{m}-ML|&\geq \epsilon]\\
+M|a_{m}-L|&\geq \epsilon \tag*{(By algebra)}
+\end{align*}
+By (1) we could find such $a_{m}-L$ that equal to $\frac{\epsilon}{2M}$.
+\begin{align*}
+    M*\frac{\epsilon}{2M}&\geq \epsilon\\
+    \frac{\epsilon}{2}&\geq \epsilon
+\end{align*}
+But this is contradiction. Hence we could find n for (2).
+\newline
+QED.
+
+\end{document}

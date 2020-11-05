@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{multicol}
+
+\begin{document}
+
+$$(\forall n \in \mathbb{N})(\exists a \in \mathbb{N})[4n+1=2a+1 \vee 4n+3=2a+1]$$
+\newline
+\begin{multicols}{2}
+\noindent
+\begin{align*}
+4n+1&=2a+1\\
+4n&=2a\\
+n&=\frac{a}{2}
+\end{align*}
+\newline
+If $a$ is even $a=2k$ where $k \in \mathbb{N}$:
+$$n=\frac{2k}{2}=k$$
+\columnbreak
+\begin{align*}
+4n+3&=2a+1\\
+4n&=2a-2\\
+n&=\frac{2(a-1)}{4}=\frac{a-1}{2}
+\end{align*}
+\newline
+If $a$ is odd $a=2l+1$ where $l \in \mathbb{N}$:
+\newline
+\begin{align*}
+n&=\frac{2l+1-1}{2}\\
+n&=\frac{2l}{2}\\
+n&=l
+\end{align*}
+\end{multicols}
+\begin{flushleft}
+Therefore for both odd and even $a$ it could be one of given forms.
+\newline
+QED.
+\end{flushleft}
+
+\end{document}

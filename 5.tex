@@ -1,0 +1,16 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{multicol}
+
+\begin{document}
+
+$$(\forall n \in \mathbb{Q})(\exists d \in \mathbb{Q})[n=3d \vee n+2=3d \vee n+4=3d]$$
+Or:
+$$(\forall n \in \mathbb{Q})(\exists d \in \mathbb{Q})[n \pm 2=3d]$$
+\newline
+Suppose $(\forall n \in \mathbb{Q})(\exists d \in \mathbb{Q})[n \pm 2\not=3d]$. Or in other words we can find such $n$ that for any $d$ it holds $n\not=3d\pm2$. Let $d=0$. Then $n=-2$ and $n=2$, but they're integers. Contradiction. Hence for any $n=3d\pm2$ we could find a $d$ such that $n\pm2=3d$.
+\newline
+QED.
+
+\end{document}
